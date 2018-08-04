@@ -35,4 +35,10 @@
     $data["uemail"] = "mail@google.com"
     $users = $db->dbQuery("SELECT * FROM users WHERE user_name=:uname and user_email=:uemail", $data, "fetch");
 ``` 
+##### 5. Вернуть id, последнего добавленного элемента:
+```php
+<?php 
+    $lastId = $db->dbLastId();
+    
+``` 
    
