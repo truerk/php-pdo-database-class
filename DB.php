@@ -92,6 +92,12 @@ class DB
             case "fetch":
                 $mode = "fetch";
                 break;
+            case "rowCount":
+                $mode = "rowCount";
+                break;
+            case "rowcount":
+                $mode = "rowCount";
+                break;
             default:
                 throw new Exception("Неправильно задан мод!");
                 die();
